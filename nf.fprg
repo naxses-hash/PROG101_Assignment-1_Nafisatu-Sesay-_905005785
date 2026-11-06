@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nf"/>
+        <attribute name="authors" value="NAX"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-05 04:20:13 pm"/>
+        <attribute name="created" value="TkFYO0RFU0tUT1AtNTM1NU1FUjsyMDI2LTExLTA1OzAzOjA1OjE0IHBtOzI1OTA="/>
+        <attribute name="edited" value="TkFYO0RFU0tUT1AtNTM1NU1FUjsyMDI2LTExLTA1OzA0OjIwOjEzIHBtOzI7MjY5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="option" type="Integer" array="False" size=""/>
+            <declare name="reportcounter" type="Integer" array="False" size=""/>
+            <output expression="&quot;clean community&quot;" newline="True"/>
+            <assign variable="option" expression="0"/>
+            <while expression="option&lt;&gt;3">
+                <output expression="&quot;1.report waste&quot;" newline="True"/>
+                <output expression="&quot;2.view reports&quot;" newline="True"/>
+                <output expression="&quot;3.exist&quot;" newline="True"/>
+                <output expression="&quot;choose an option&quot;" newline="True"/>
+                <input variable="option"/>
+                <if expression="option==1">
+                    <then>
+                        <output expression="&quot;running submit report...&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="option==2">
+                            <then>
+                                <output expression="&quot;running view report&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="option==3">
+                                    <then>
+                                        <output expression="&quot;thankyou goodbye&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;invalid option choose&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
